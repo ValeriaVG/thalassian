@@ -20,9 +20,7 @@
       }).catch(function(ex) {
         console.log('parsing failed', ex)
       })
-    var translate = function(e) {
-      e.preventDefault();
-      e.stopPropagation();
+    var translate = function() {
       var text = document.getElementById('input').value;
       var lines = text.toLowerCase().split("\n");
       var txt = [];
@@ -45,7 +43,6 @@
     <p class="light-secondary">An LSTM Neural network example</p>
   </div>
   <div class="padded">
-    <form onSubmit="translate(event);return false;">
       <div class="grid trailer">
 
         <div class="cell-6">
@@ -55,9 +52,8 @@
           <div id="output" placeholder="Type the phrase in english" class="padded grey-bg-2" style="height:100%"><span class="dark-hint">Translation will appear here</span></div>
         </div>
       </div>
-      <button onClick="translate(event);return false;">Translate</button>
+      <button onClick="translate()">Translate</button>
 
-    </form>
   </div>
   <div class="padded dark-secondary grey-bg-2">
     Data from <a href="http://wowwiki.wikia.com/wiki/Thalassian" target="_blank">http://wowwiki.wikia.com/wiki/Thalassian</a> was used to train the network
