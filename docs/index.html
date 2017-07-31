@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <title>English - Thalassian translator </title>
   <link rel="stylesheet" href="https://rawgit.com/VVGCreative/mockery/master/css/mockery.css">
   <script src="https://rawgit.com/harthur-org/brain.js/master/browser.min.js"></script>
 </head>
@@ -21,14 +22,14 @@
     var translate = function(e) {
       e.preventDefault();
       var text = document.getElementById('input').value;
-      var lines = text.toLowerCase().split("/n");
+      var lines = text.toLowerCase().split("\n");
       var txt = [];
       var i = 0;
       lines.forEach(function(line){
         var parts = line.split(',');
         txt[i] = [];
         parts.forEach(function(part){
-          txt[i].push(net.run(part.trim()));
+          if(part.trim().length>0) txt[i].push(net.run(part.trim()));
         });
         txt[i].join(',');
         i++;
