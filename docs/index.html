@@ -21,7 +21,20 @@
     var translate = function(e) {
       e.preventDefault();
       var text = document.getElementById('input').value;
-      document.getElementById('output').innerHTML = net.run(text.toLowerCase());
+      var lines = text.toLowerCase().split("/n");
+      var txt = [];
+      var i = 0;
+      lines.forEach(function(line){
+        var parts = line.split(',');
+        txt[i] = [];
+        parts.forEach(function(part){
+          txt[i].push(net.run(part.trim()));
+        });
+        txt[i].join(',');
+        i++;
+      })
+
+      document.getElementById('output').innerHTML = txt.join("\n");
     }
   </script>
   <div class="padded light-primary grey-bg-10">

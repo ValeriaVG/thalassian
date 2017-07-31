@@ -7,7 +7,7 @@ fs.open('./docs/net.json', 'r', (err, fd) => {
   if (err) {
     net.train(langJson, {
       log: true,
-      iterations: 400
+      iterations: 1000
     });
     var json = net.toJSON();
     fs.writeFileSync('./docs/net.json', JSON.stringify(json));
