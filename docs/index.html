@@ -22,6 +22,7 @@
       })
     var translate = function(e) {
       e.preventDefault();
+      e.stopPropagation();
       var text = document.getElementById('input').value;
       var lines = text.toLowerCase().split("\n");
       var txt = [];
@@ -54,7 +55,7 @@
           <div id="output" placeholder="Type the phrase in english" class="padded grey-bg-2" style="height:100%"><span class="dark-hint">Translation will appear here</span></div>
         </div>
       </div>
-      <button>Translate</button>
+      <button onclick="translate(event)">Translate</button>
 
     </form>
   </div>
