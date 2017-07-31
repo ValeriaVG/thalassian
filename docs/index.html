@@ -45,7 +45,7 @@
     <p class="light-secondary">An LSTM Neural network example</p>
   </div>
   <div class="padded">
-    <form onsubmit="translate(event)">
+    <form onSubmit="translate(event);return false;">
       <div class="grid trailer">
 
         <div class="cell-6">
@@ -55,7 +55,7 @@
           <div id="output" placeholder="Type the phrase in english" class="padded grey-bg-2" style="height:100%"><span class="dark-hint">Translation will appear here</span></div>
         </div>
       </div>
-      <button onclick="translate(event)">Translate</button>
+      <button onClick="translate(event);return false;">Translate</button>
 
     </form>
   </div>
