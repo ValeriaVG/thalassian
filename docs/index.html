@@ -67,7 +67,7 @@
         i++;
       })
 
-      document.getElementById('output').innerHTML = txt.join("\n");
+      document.getElementById('output').innerHTML = txt.join("\n").replace('stop-inputstart-output',' ');
     }
     document.forms[0].onsubmit = translate;
   </script>

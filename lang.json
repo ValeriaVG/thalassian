@@ -11,12 +11,20 @@
     "input": "saved by magic"
   },
   {
+    "output": "arkhana",
+    "input": "magic"
+  },
+  {
     "output": "anar'alah",
     "input": "by the light"
   },
   {
     "output": "anar'alah belore",
     "input": "by the light of the sun"
+  },
+  {
+    "output": "anar",
+    "input": "by the"
   },
   {
     "output": "anaria shola",
@@ -39,8 +47,12 @@
     "input": "rise"
   },
   {
-    "output": "bal'a dash, malanore",
-    "input": "greetings, traveler"
+    "output": "bal'a dash",
+    "input": "greetings"
+  },
+  {
+    "output": "malanore",
+    "input": "traveler"
   },
   {
     "output": "ban'dinoriel",
@@ -55,8 +67,12 @@
     "input": "taste the chill of true death"
   },
   {
-    "output": "belono sil'aru, belore'dorei",
-    "input": "shoulder your burdens well, child of the sun"
+    "output": "belono sil'aru",
+    "input": "shoulder your burdens well"
+  },
+  {
+    "output": "belore'dorei",
+    "input": "child of the sun"
   },
   {
     "output": "belore",
@@ -64,11 +80,15 @@
   },
   {
     "output": "doral ana'diel",
-    "input": "how fare you"
+    "input": "how dare you"
   },
   {
-    "output": "elor bindel felallan morin'aminor",
-    "input": "sleep forever in quiet serenity"
+    "output": "elor bindel",
+    "input": "sleep forever"
+  },
+  {
+    "output": "felallan morin'aminor",
+    "input": "in quiet serenity"
   },
   {
     "output": "elu'meniel mal alann",
@@ -92,15 +112,27 @@
   },
   {
     "output": "quel'dorei",
-    "input": "children of noble birth"
+    "input": "highborn"
+  },
+  {
+    "output": "quel",
+    "input": "high"
   },
   {
     "output": "quel'serrar",
     "input": "high blade"
   },
   {
+    "output": "serrar",
+    "input": "blade"
+  },
+  {
     "output": "quel'thalas",
     "input": "high home"
+  },
+  {
+    "output": "thalas",
+    "input": "home"
   },
   {
     "output": "rea",
@@ -109,6 +141,10 @@
   {
     "output": "selama ashal'anore",
     "input": "justice for our people"
+  },
+  {
+    "output": "selama",
+    "input": "justice"
   },
   {
     "output": "shindu fallah na",
@@ -127,12 +163,12 @@
     "input": "well met"
   },
   {
-    "output": "sunstrider",
-    "input": "he who walks the day"
-  },
-  {
     "output": "tal anu'men no sin'dorei",
     "input": "death to all who oppose the children of the blood"
+  },
+  {
+    "output": "thas",
+    "input": "forest"
   },
   {
     "output": "thas'alah",
