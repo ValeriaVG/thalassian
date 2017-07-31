@@ -8,16 +8,13 @@
   <script src="https://rawgit.com/harthur-org/brain.js/master/browser.min.js"></script>
   <script src="https://rawgit.com/github/fetch/master/fetch.js"></script>
   <style>
-  @media (max-width:600px)
-  {
-    .grid .cell-6
-    {
-      width:100%;
+    @media (max-width:600px) {
+      .grid .cell-6 {
+        width: 100%;
+      }
     }
-  }
   </style>
 </head>
-
 <body>
   <div class="padded light-primary grey-bg-10">
     <h1>English - Thalassian translator </h1>
@@ -26,7 +23,6 @@
   <div class="padded">
     <form>
       <div class="grid trailer">
-
         <div class="cell-6">
           <textarea id="input" class="padded"></textarea>
         </div>
@@ -34,8 +30,8 @@
           <div id="output" placeholder="Type the phrase in english" class="padded grey-bg-2" style="height:100%"><span class="dark-hint">Translation will appear here</span></div>
         </div>
       </div>
-      <button>Translate</button>
-
+      <button class="grey-bg-10 light-primary" type="submit">Translate</button>
+      <button type="reset">Clear</button>
     </form>
   </div>
   <div class="padded dark-secondary grey-bg-2">
@@ -52,18 +48,20 @@
       }).catch(function(ex) {
         console.log('parsing failed', ex)
       })
+
     var translate = function(e) {
+      document.getElementById('output').innerHTML = '<span class="dark-hint">Translating...</span>';
       e.preventDefault();
       e.stopPropagation();
       var text = document.getElementById('input').value;
       var lines = text.toLowerCase().split("\n");
       var txt = [];
       var i = 0;
-      lines.forEach(function(line){
+      lines.forEach(function(line) {
         var parts = line.split(',');
         txt[i] = [];
-        parts.forEach(function(part){
-          if(part.trim().length>0) txt[i].push(net.run(part.trim()));
+        parts.forEach(function(part) {
+          if (part.trim().length > 0) txt[i].push(net.run(part.trim()));
         });
         txt[i].join(',');
         i++;
@@ -71,7 +69,7 @@
 
       document.getElementById('output').innerHTML = txt.join("\n");
     }
-document.forms[0].onsubmit = translate;
+    document.forms[0].onsubmit = translate;
   </script>
 </body>
 
